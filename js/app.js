@@ -7,4 +7,7 @@ function adicionar (){
     listaDeAmigos.push(amigo);
     // limpar campo
     document.getElementById('nome-amigo').value = '';
+    // exibir na tela
+    document.getElementById('lista-amigos').textContent = listaDeAmigos;
 }
+
