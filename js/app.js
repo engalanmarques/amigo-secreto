@@ -24,7 +24,6 @@ function sortear(){
         // verifica se houve repetição no sorteio, ou se sorteou a si mesmo
         while (sorteado == listaParaSorteio[qtdPareados] || listaSorteio.includes(sorteado)){
             sorteado = parear(listaParaSorteio);
-            console.log(`amigo1 ${listaParaSorteio[qtdPareados]} amigo2 ${sorteado}`)
         }
         // adiciona a lista dos sorteados
         listaSorteio.push(sorteado);
