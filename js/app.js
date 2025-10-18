@@ -34,7 +34,7 @@ function sortear(){
 function parear(possiveisSorteados){
     // sortear um amigo aleatorio entre o primeiro e o ultimo
     let sorte = possiveisSorteados.length;
-    indiceSorteado = Math.floor(Math.random() * sorte);
+    let indiceSorteado = Math.floor(Math.random() * sorte);
     let sorteado = possiveisSorteados[indiceSorteado];
     return sorteado; 
 }
