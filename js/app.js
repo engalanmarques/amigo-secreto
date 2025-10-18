@@ -52,3 +52,23 @@ function exibirNaTela(listaPresenteia, listaPresenteado){
         contador++;
         }
 }
+function reiniciar(){
+    let escolha = prompt('Deseja manter a lista de amigos? 1 - SIM 2 - NAO');
+    if (escolha == 1){
+        //limpar resultado do sorteio
+        document.getElementById('lista-sorteio').textContent = '';
+    } else if (escolha == 2){
+        // limpar resultado do sorteio
+        document.getElementById('lista-sorteio').textContent = '';
+        //zerar lista de amigos
+        listaDeAmigos = []
+        // limpar amigos incluidos
+        document.getElementById('lista-amigos').textContent = '';
+
+    } else{
+        alert("Opção inválida");
+        reiniciar();
+    }
+    
+
+}
