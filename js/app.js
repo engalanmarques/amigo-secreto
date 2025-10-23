@@ -20,6 +20,10 @@ function adicionar (){
 }
 
 function sortear(){
+    if (listaDeAmigos.length < 3){
+        alert('Adicione pelo menos três amigos para realizar o sorteio.');
+        return;
+    }
     // copiar lista de amigos
     let listaParaSorteio = listaDeAmigos;
     let qtdAmigos = listaParaSorteio.length;
@@ -74,7 +78,7 @@ function reiniciar(){
 
     } else{
         alert("Opção inválida");
-        reiniciar();
+       return
     }
     
 
