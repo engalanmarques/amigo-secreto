@@ -4,6 +4,14 @@ let listaDeAmigos = []
 function adicionar (){
     // recupera o nome do amigo adicionado
     let amigo = document.getElementById('nome-amigo').value;
+    if (amigo === ''){
+        alert('Por favor, insira um nome válido.');
+        return;
+    }
+    if (listaDeAmigos.includes(amigo)){
+        alert('Amigo já adicionado. Insira um nome diferente.');  
+        return;
+    }
     listaDeAmigos.push(amigo);
     // limpar campo
     document.getElementById('nome-amigo').value = '';
